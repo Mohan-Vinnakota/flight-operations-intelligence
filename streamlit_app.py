@@ -35,7 +35,7 @@ st.subheader("Aircraft by Country")
 country_df = latest.groupby('origin_country')['icao24'].count().reset_index()
 country_df.columns = ['Country', 'Aircraft']
 country_df = country_df.sort_values('Aircraft', ascending=False).head(15)
-st.bar_chart(country_df.set_index('Country'))
+st.dataframe(country_df, hide_index=True, use_container_width=True)
 
 st.subheader("Aircraft Activity Over Time")
 hourly = df.groupby('collected_at')['icao24'].nunique().reset_index()
