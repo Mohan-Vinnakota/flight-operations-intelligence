@@ -2,7 +2,8 @@ import requests
 import psycopg2
 from datetime import datetime
 
-DB_URL = "postgresql://postgres.yalulvtrtuamcytshetg:Mohan16Sai98@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"
+import os
+DB_URL = os.environ.get("DATABASE_URL")
 
 def create_table():
     conn = psycopg2.connect(DB_URL)

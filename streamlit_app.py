@@ -2,7 +2,7 @@ import streamlit as st
 import psycopg2
 import pandas as pd
 
-DB_URL = "postgresql://postgres.yalulvtrtuamcytshetg:Mohan16Sai98@aws-0-ap-southeast-1.pooler.supabase.com:5432/postgres"
+DB_URL = st.secrets["DB_URL"]
 
 st.set_page_config(page_title="Flight Operations Intelligence", layout="wide")
 st.title("✈️ Real-Time Flight Operations Intelligence")
