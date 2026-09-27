@@ -1,6 +1,6 @@
-echo requests==2.34.2 > requirements.txt
-echo schedule==1.2.2 >> requirements.txt
-echo pandas==2.3.3 >> requirements.txt
-echo sqlalchemy==2.0.52 >> requirements.txt
-echo psycopg2-binary==2.9.13 >> requirements.txt
-echo streamlit >> requirements.txt
+requests==2.34.2
+schedule==1.2.2
+pandas==2.3.3
+sqlalchemy==2.0.52
+psycopg2-binary==2.9.13
+streamlit==1.41.1
