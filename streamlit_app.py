@@ -40,7 +40,7 @@ st.dataframe(country_df, hide_index=True, use_container_width=True)
 st.subheader("Aircraft Activity Over Time")
 hourly = df.groupby('collected_at')['icao24'].nunique().reset_index()
 hourly.columns = ['Time', 'Aircraft Count']
-st.line_chart(hourly.set_index('Time'))
+st.dataframe(hourly, hide_index=True, use_container_width=True)
 
 st.subheader("Data Quality")
 st.dataframe({
